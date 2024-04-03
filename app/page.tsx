@@ -15,11 +15,7 @@ export default function Home() {
             </div>
           </div>)
         )} */}
-        <div className="group flex flex-col">
-          <input type="text" className="bg-gray-100 w-full" placeholder="Write your email"/>
-          <span className="group-focus-within:block hidden">Make sure it is a valid email...</span>
-          <button>Submit</button>
-        </div>
+        <button className="w-full bg-black text-white h-10 rounded-sexy-name m-tomato">Submit</button>
       </div>
     </main>
   );
