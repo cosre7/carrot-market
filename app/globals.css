@@ -16,7 +16,7 @@
   }
 }
 
-/* 버튼을 형성하기 위해 class들을 다같이 추상화하는 컴포넌트 */
+/* .btn을 형성하기 위해 class들을 다같이 추상화하는 컴포넌트 */
 @layer components {
   .btn {
     @apply w-full bg-black h-10 text-white rounded-sexy-name mt-tomato;
