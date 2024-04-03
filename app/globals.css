@@ -2,6 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-.btn {
-  @apply w-full bg-black h-10 text-white rounded-sexy-name mt-tomato;
+/* application의 모든 곳에서 모든 태그를 위한 일반적인 style */
+@layer base {
+  a {
+    @apply text-blue-500;
+  }
+}
+
+/* application의 모든 곳에서 사용할 수 있는 새로운 class */
+@layer utilities {
+  .text-bigger-hello {
+    @apply text-3xl font-semibold;
+  }
+}
+
+/* 버튼을 형성하기 위해 class들을 다같이 추상화하는 컴포넌트 */
+@layer components {
+  .btn {
+    @apply w-full bg-black h-10 text-white rounded-sexy-name mt-tomato;
+  }
 }
